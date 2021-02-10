@@ -24,7 +24,7 @@ def handleMute(e):
             hwnd_active = win32gui.GetForegroundWindow()
             win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_MUTE)
             if IS_MUTED is True:
-                print("Mic Disable")
+                print("Mic Enable")
                 IS_MUTED = False
             elif IS_MUTED != True:
                 print("Mic Disable")
